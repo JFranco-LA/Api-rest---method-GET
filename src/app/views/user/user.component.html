@@ -1,0 +1,75 @@
+<main *ngIf="isLoading">
+    <div><button routerLink="/home"> «- Volver</button></div>
+    <section class="card-container">
+        <div class="container-all">
+            <figure class="imagen-container">
+                <img [src]="photoUser+user.name" alt="">
+            </figure>
+            <article class="info-container">
+                <div>
+                    <ul class="options-container">
+                        <li class="--active">Profile</li>
+                        <li>Resume</li>
+                        <li>Portfolio</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="texts-container">
+                    <h3>Hello, I'm {{user.name}}</h3>
+                    <p>I am currently working in the company <span>{{userCompany.name}}</span>, where i take care of
+                        <span>{{userCompany.bs}}</span> in the area of <span> "{{userCompany.catchPhrase}}"</span>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, dolorum quidem? Quis rem ab
+                        quae
+                        repellat, non eligendi possimus, ducimus ea tempore facilis magnam reprehenderit tempora magni
+                        omnis
+                        corporis nisi!
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam minus placeat officia ea nam
+                        facilis
+                        soluta ex pariatur laudantium, voluptatibus fuga dignissimos iure vitae alias eos, quaerat
+                        explicabo, amet nemo?</p>
+                </div>
+
+                <div class="buttons-container">
+                    <button>Hire Me</button>
+                    <button>Download CV</button>
+                </div>
+                <div class="container-data-contact">
+                    <ul>
+                        <li>
+                            <p>Email: </p>
+                            <p>{{user.email}}</p>
+                        </li>
+                        <li>
+                            <p>Phone: </p>
+                            <p>{{user.phone}}</p>
+                        </li>
+
+                    </ul>
+                    <ul>
+                        <li>
+                            <p>UserName: </p>
+                            <p>{{user.username}}</p>
+                        </li>
+                        <li>
+                            <p>WebSite: </p>
+                            <p>{{user.website}}</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <p>Address: </p>
+                            <p>{{userAddress.street}}</p>
+                        </li>
+                        <li>
+                            <p>City: </p>
+                            <p>{{userAddress.city}}</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </article>
+        </div>
+    </section>
+</main>
+<app-spinner *ngIf="!isLoading"></app-spinner>

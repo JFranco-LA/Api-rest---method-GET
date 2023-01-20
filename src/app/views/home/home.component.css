@@ -1,0 +1,100 @@
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70vw;
+    margin: auto;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    height: 95vh;
+}
+
+.card-person {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    background-color: #fff;
+    position: relative;
+
+    transition: all .6s;
+
+}
+
+
+.card-person:hover {
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.card-person section {
+    padding: .25rem 1rem;
+}
+
+.header-card,
+.body-card {
+    pointer-events: none;
+}
+
+.card-person section h2,
+h3,
+p {
+    margin: 0;
+}
+
+.header-card h3 {
+    padding: 1rem 0;
+    text-align: center;
+    color: white;
+}
+
+.body-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.body-card div {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.body-card div p {
+    font-size: 1.175rem;
+}
+
+.div-1 {
+    padding-top: .5rem;
+}
+
+.div-1 h2 {
+    letter-spacing: .05rem;
+    font-weight: lighter;
+    font-size: 1.35rem;
+}
+
+.div-3 {
+    padding-bottom: 1.15rem;
+}
+
+.style1,
+.style3,
+.style5,
+.style7,
+.style9 {
+    background: rgb(0, 185, 255);
+    background: linear-gradient(90deg, rgba(0, 185, 255, 1) 0%, rgba(87, 253, 45, 1) 100%);
+}
+
+.style2,
+.style4,
+.style6,
+.style8,
+.style10 {
+    background: rgb(0, 146, 255);
+    background: linear-gradient(90deg, rgba(0, 146, 255, 1) 0%, rgba(233, 45, 253, 1) 100%);
+}

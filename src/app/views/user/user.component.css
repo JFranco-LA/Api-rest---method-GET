@@ -1,0 +1,119 @@
+.card-container {
+    height: 100vh;
+    width: 60vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card-container div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 1rem;
+    background-color: aliceblue;
+}
+
+.imagen-container {
+    background-color: #4b9e7c;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    padding: .25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-container img {
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 1px solid black;
+    gap: 1rem   ;
+    padding-top: 1rem;
+}
+
+.options-container {
+    display: flex;
+    width: 100%;
+    gap: 6rem;
+    padding: 0 .5rem;
+    /* justify-content: space-between; */
+    background-color: #c6f8ffbb;
+    margin: 0;
+}
+
+.options-container li {
+    list-style: square;
+    ;
+    padding: 1rem 0;
+    font-size: 1.25rem;
+}
+
+.--active {
+    color: #193b99;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+.texts-container {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: .5rem;
+}
+
+.texts-container h3 {
+    margin: 0;
+    font-size: 1.75rem;
+}
+
+.texts-container p {
+    margin: 0;
+    font-size: 1.25rem;
+    letter-spacing: .05rem;
+}
+
+.buttons-container{
+    margin-top: .75rem;
+    margin-bottom: 1.5rem;
+}
+
+.container-data-contact {
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+
+}
+
+.container-data-contact ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-data-contact ul li {
+    margin: 0;
+}
+
+button{
+    background-color: #193b99;
+    padding: .75rem;
+    color: white;
+    border-color: #193b99;
+    transition: all .5s;
+}
+
+button:hover{
+    background-color: transparent;
+    color: #193b99;
+}

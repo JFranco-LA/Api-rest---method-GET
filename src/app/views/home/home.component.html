@@ -1,0 +1,25 @@
+<section class="content">
+      <div *ngFor="let user of users; let i = index">
+         <article [routerLink]='redirecTo+(i+1)' class="container-cards">
+            <div class="card-person">
+               <section class="header-card" [ngClass]="style+user.id">
+                  <h3>Persona N°{{user.id}}</h3>
+               </section>
+               <section class="body-card">
+                  <div class="div-1">
+                     <p>Nombre: </p>
+                     <h2>{{user.name}}</h2>
+                  </div>
+                  <div>
+                     <p> Correo: </p>
+                     <p>{{user.email}}</p>
+                  </div>
+                  <div class="div-3">
+                     <p> Telefono: </p>
+                     <p>{{user.phone}}</p>
+                  </div>
+               </section>
+            </div>
+         </article>
+      </div>
+</section>
